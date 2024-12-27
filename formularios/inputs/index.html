@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Formulários</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formulários</h1>
+    </header>
+    <hr />
+    <main>
+      <section>
+        <h2>Fieldset e Legend</h2>
+        <form action="#" method="#">
+          <fieldset>
+            <legend>Dividir por campos</legend>
+            <p>Referente ao campo 1</p>
+            <p>Referente ao campo 1</p>
+          </fieldset>
+          <fieldset>
+            <legend>Dividir por campos</legend>
+            <p>Referente ao campo 2</p>
+            <p>Referente ao campo 2</p>
+          </fieldset>
+        </form>
+      </section>
+      <hr />
+      <section>
+        <h2>Inputs</h2>
+        <form action="#" method="#">
+          <div>
+            <label for="text">Type text:</label>
+            <input type="text" id="text" name="text" required />
+          </div>
+          <div>
+            <label for="email">Type email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="password">Type password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div>
+            <label for="radio">Type radio:</label>
+            <div>
+              <input type="radio" id="radio1" name="radio" value="radio1" />
+              <label for="radio1">Radio 1</label>
+            </div>
+            <div>
+              <input type="radio" id="radio2" name="radio" value="radio2" />
+              <label for="radio2">Radio 2</label>
+            </div>
+            <div>
+              <input type="radio" id="radio3" name="radio" value="radio3" />
+              <label for="radio3">Radio 3</label>
+            </div>
+          </div>
+          <div>
+            <label for="checkbox">Type checkbox:</label>
+            <div>
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="check1"
+                value="check1"
+              />
+              <label for="check1">Check 1</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="check2"
+                value="check2"
+              />
+              <label for="check2">Check 2</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="check3"
+                value="check3"
+              />
+              <label for="check3">Check 3</label>
+            </div>
+          </div>
+          <div>
+            <label for="date">Type date:</label>
+            <input type="date" id="date" name="date" />
+          </div>
+          <div>
+            <label for="file">Type file:</label>
+            <input type="file" id="file" name="file" />
+          </div>
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+      <hr />
+      <section>
+        <h2>Selects</h2>
+        <form action="#" method="#">
+          <div>
+            <label for="select">Select:</label>
+            <select name="select" id="select">
+              <option value="" selected disabled>Selecione uma opção</option>
+              <option value="opcao1">Opção 1</option>
+              <option value="opcao2">Opção 2</option>
+              <option value="opcao3">Opção 3</option>
+            </select>
+          </div>
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+      <hr />
+      <section>
+        <h2>Textarea</h2>
+        <form action="#" method="#">
+          <div>
+            <label for="textarea">Textarea:</label> <br />
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </div>
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

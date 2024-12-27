@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid;
+        padding: 0.5em;
+        text-align: center;
+      }
+    </style>
+    <title>Tabelas</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tabelas</h1>
+    </header>
+    <hr />
+    <main>
+      <section>
+        <h2>Simples</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Sobrenome</th>
+              <th>Idade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Andrew</td>
+              <td>Gomes</td>
+              <td>36</td>
+            </tr>
+            <tr>
+              <td>Viviane</td>
+              <td>Rodrigues</td>
+              <td>39</td>
+            </tr>
+            <tr>
+              <td>Rafael</td>
+              <td>Rodrigues</td>
+              <td>41</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <hr />
+      <section>
+        <h2>Complexa</h2>
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2"></th>
+              <th colspan="2">Andrew</th>
+              <th colspan="2">Viviane</th>
+            </tr>
+            <tr>
+              <th>Produzidos</th>
+              <th>Vendidos</th>
+              <th>Produzidos</th>
+              <th>Vendidos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Celulares</th>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <th>Desktop</th>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
