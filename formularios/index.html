@@ -3,7 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
+    <style>
+      form {
+        width: 50%;
+        margin: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+      }
+    </style>
     <title>Formulários</title>
   </head>
   <body>
@@ -14,26 +22,51 @@
     <main>
       <section>
         <h2>Fieldset e Legend</h2>
-        <form action="#" method="#">
+        <form>
           <fieldset>
             <legend>Dividir por campos</legend>
-            <p>Referente ao campo 1</p>
-            <p>Referente ao campo 1</p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" />
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" />
           </fieldset>
           <fieldset>
             <legend>Dividir por campos</legend>
-            <p>Referente ao campo 2</p>
-            <p>Referente ao campo 2</p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" />
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" />
           </fieldset>
         </form>
       </section>
       <hr />
       <section>
+        <h2>Datalist</h2>
+        <form>
+          <div>
+            <label for="lista">Datalist</label>
+            <input type="text" id="lista" list="tech" />
+            <datalist id="tech">
+              <option value="HTML 5"></option>
+              <option value="CSS 3"></option>
+              <option value="JavaScript"></option>
+              <option value="Node.js"></option>
+              <option value="PHP"></option>
+            </datalist>
+          </div>
+        </form>
+      </section>
+      <hr />
+      <section>
         <h2>Inputs</h2>
-        <form action="#" method="#">
+        <form>
           <div>
             <label for="text">Type text:</label>
             <input type="text" id="text" name="text" required />
+          </div>
+          <div>
+            <label for="number">Type number:</label>
+            <input type="number" id="number" name="number" required />
           </div>
           <div>
             <label for="email">Type email:</label>
@@ -96,13 +129,12 @@
             <label for="file">Type file:</label>
             <input type="file" id="file" name="file" />
           </div>
-          <input type="submit" value="Submit" />
         </form>
       </section>
       <hr />
       <section>
         <h2>Selects</h2>
-        <form action="#" method="#">
+        <form>
           <div>
             <label for="select">Select:</label>
             <select name="select" id="select">
@@ -112,13 +144,12 @@
               <option value="opcao3">Opção 3</option>
             </select>
           </div>
-          <input type="submit" value="Submit" />
         </form>
       </section>
       <hr />
       <section>
         <h2>Textarea</h2>
-        <form action="#" method="#">
+        <form>
           <div>
             <label for="textarea">Textarea:</label> <br />
             <textarea
@@ -128,8 +159,26 @@
               rows="5"
             ></textarea>
           </div>
-          <input type="submit" value="Submit" />
         </form>
+      </section>
+      <hr />
+      <section>
+        <h2>Buttons</h2>
+        <div>
+          <input type="submit" value="Input Submit" />
+          <button>Button Submit</button>
+        </div>
+        <br />
+        <div>
+          <input type="reset" value="Input Reset" />
+          <button type="reset">Button Reset</button>
+        </div>
+        <br />
+        <div>
+          <input type="button" disabled value="Input Disabled" />
+          <button disabled>Button Disabled</button>
+        </div>
+        <br />
       </section>
     </main>
   </body>
